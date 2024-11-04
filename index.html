@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret sto'liste</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header avec logo -->
+    <header class="bg-dark text-center text-white py-5">
+        <div class="container">
+            <img src="logo.png" alt="Logo de Secret sto'liste" class="logo mb-3">
+            <h1>Bienvenue sur le site de la Secret sto'liste</h1>
+            <p class="lead">Découvrez notre équipe et nos ambitions pour le BDE !</p>
+        </div>
+    </header>
+
+    <!-- Section Équipe -->
+    <section id="equipe" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Rencontrez l'Équipe</h2>
+            <div class="row">
+                <!-- Carte d'un membre de l'équipe -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="membre1.jpg" class="card-img-top" alt="Photo Membre 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nom Prénom</h5>
+                            <p class="card-text">Secret : Aime danser dans les couloirs la nuit 🌙</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplique cette carte pour chaque membre -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vidéos -->
+    <section id="videos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Vidéos</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ID_VIDEO" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Ajoute des iframes ou des vidéos supplémentaires ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contactez-nous</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
