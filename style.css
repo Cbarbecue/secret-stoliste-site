@@ -1,35 +1,105 @@
-/* Personnalisation basique */
+/* Importer la police de Google Fonts */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-/* Logo */
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.header h1 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
 .logo {
     width: 150px;
     height: auto;
+    z-index: 2;
 }
 
-/* Style pour les cartes des membres */
-.card {
+/* Section Titre */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+}
+
+/* Cartes de membres */
+.member-card {
     border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     height: 250px;
     object-fit: cover;
 }
 
-/* Section header */
-header {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
+/* Vidéos */
+.video-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Contact */
-#contact form {
+/* Formulaire de contact */
+.contact-form {
     max-width: 600px;
-    margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #333;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #555;
 }
